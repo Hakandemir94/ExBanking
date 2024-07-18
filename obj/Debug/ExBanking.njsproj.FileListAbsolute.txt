@@ -1,0 +1,3 @@
+C:\Users\demir\Desktop\SWDev\ExBanking\obj\Debug\ExBanking.njsproj.AssemblyReference.cache
+C:\Users\demir\Desktop\SWDev\ExBanking\obj\Debug\ExBanking.njsproj.CoreCompileInputs.cache
+C:\Users\demir\Desktop\SWDev\ExBanking\bin\Microsoft.NodejsTools.WebRole.dll

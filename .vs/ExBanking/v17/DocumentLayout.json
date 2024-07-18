@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\backend\\bankingservice.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:test\\backend\\bankingservice.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\controllers\\userController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:src\\controllers\\userController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\models\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:src\\models\\user.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\services\\userService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:src\\services\\userService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\repositories\\BankingServiceRepository.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:test\\repositories\\BankingServiceRepository.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\mockApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:src\\mockApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\utils\\utils.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:test\\utils\\utils.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\bankingService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:src\\bankingService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\load-test.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:load-test.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\proto\\banking.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:proto\\banking.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BankingServiceRepository.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\repositories\\BankingServiceRepository.js",
+              "RelativeDocumentMoniker": "test\\repositories\\BankingServiceRepository.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\repositories\\BankingServiceRepository.js",
+              "RelativeToolTip": "test\\repositories\\BankingServiceRepository.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-17T10:07:26.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "userController.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\controllers\\userController.js",
+              "RelativeDocumentMoniker": "src\\controllers\\userController.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\controllers\\userController.js",
+              "RelativeToolTip": "src\\controllers\\userController.js",
+              "ViewState": "AQIAACsAAAAAAAAAAAAswFwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-17T09:28:44.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "userService.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\services\\userService.js",
+              "RelativeDocumentMoniker": "src\\services\\userService.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\services\\userService.js",
+              "RelativeToolTip": "src\\services\\userService.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-17T09:27:49.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "user.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\models\\user.js",
+              "RelativeDocumentMoniker": "src\\models\\user.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\models\\user.js",
+              "RelativeToolTip": "src\\models\\user.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-03T21:11:50.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "utils.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\utils\\utils.js",
+              "RelativeDocumentMoniker": "test\\utils\\utils.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\utils\\utils.js",
+              "RelativeToolTip": "test\\utils\\utils.js",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-03T12:58:41.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "load-test.yml",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\load-test.yml",
+              "RelativeDocumentMoniker": "load-test.yml",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\load-test.yml",
+              "RelativeToolTip": "load-test.yml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-05-31T16:30:08.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "bankingservice.test.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\backend\\bankingservice.test.js",
+              "RelativeDocumentMoniker": "test\\backend\\bankingservice.test.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\backend\\bankingservice.test.js",
+              "RelativeToolTip": "test\\backend\\bankingservice.test.js",
+              "ViewState": "AQIAADIAAAAAAAAAAAAswEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-31T12:41:45.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "banking.proto",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\proto\\banking.proto",
+              "RelativeDocumentMoniker": "proto\\banking.proto",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\proto\\banking.proto",
+              "RelativeToolTip": "proto\\banking.proto",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-05-29T14:35:44.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "bankingService.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\bankingService.js",
+              "RelativeDocumentMoniker": "src\\bankingService.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\bankingService.js",
+              "RelativeToolTip": "src\\bankingService.js",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-29T12:31:47.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mockApi.js",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\mockApi.js",
+              "RelativeDocumentMoniker": "src\\mockApi.js",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\mockApi.js",
+              "RelativeToolTip": "src\\mockApi.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-29T12:33:01.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-29T12:32:53.931Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

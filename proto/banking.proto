@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package exbanking;
+
+message CreateUserRequest {
+  string username = 1;
+}
+
+message CreateUserResponse {
+  bool success = 1;
+  string message = 2;
+  string userId = 3;
+}
+
+message TransactionRequest {
+  string userId = 1;
+  double amount = 2;
+}
+
+message TransactionResponse {
+  bool success = 1;
+  string message = 2;
+  double balance = 3;
+}
+
+message BalanceRequest {
+  string userId = 1;
+}
+
+message BalanceResponse {
+  bool success = 1;
+  string message = 2;
+  double balance = 3;
+}
+
+message SendRequest {
+  string from_userId = 1;
+  string to_userId = 2;
+  double amount = 3;
+}
+
+message SendResponse {
+  bool success = 1;
+  string message = 2;
+  double from_balance = 3;
+  double to_balance = 4;
+}
