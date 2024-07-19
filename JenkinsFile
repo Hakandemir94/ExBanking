@@ -16,21 +16,21 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install dependencies
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         
         stage('Start MongoDB') {
             steps {
                 // Start MongoDB
-                sh 'net start MongoDB'
+                bat 'net start MongoDB'
             }
         }
 
         stage('Run Tests') {
             steps {
                 // Run tests
-                sh 'npm test'
+                bat 'npm test'
             }
             post {
                 always {
@@ -42,7 +42,7 @@ pipeline {
         stage('Run Load Tests') {
             steps {
                 // Run load tests
-                sh 'artillery run load-test.yml'
+                bat 'artillery run load-test.yml'
             }
         }
     }
