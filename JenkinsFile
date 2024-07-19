@@ -1,0 +1,61 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs 'NodeJS 14' // The NodeJS version you configured in Jenkins
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from GitHub
+                git url: 'https://github.com/Hakandemir94/ExBanking.git', branch: 'main'
+            }
+        }
+        
+        stage('Install Dependencies') {
+            steps {
+                // Install dependencies
+                sh 'npm install'
+            }
+        }
+        
+        stage('Start MongoDB') {
+            steps {
+                // Start MongoDB
+                sh 'net start MongoDB'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                // Run tests
+                sh 'npm test'
+            }
+            post {
+                always {
+                    junit 'reports/junit.xml' // Publish test results
+                }
+            }
+        }
+
+        stage('Run Load Tests') {
+            steps {
+                // Run load tests
+                sh 'artillery run load-test.yml'
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+            publishHTML(target: [
+                reportName: 'Test Report',
+                reportDir: 'reports',
+                reportFiles: 'report.html',
+                keepAll: true
+            ])
+        }
+    }
+}
