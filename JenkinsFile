@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS 14' // The NodeJS version you configured in Jenkins
+        nodejs 'ExBanking_NodeJS' // The NodeJS version you configured in Jenkins
     }
 
     stages {
