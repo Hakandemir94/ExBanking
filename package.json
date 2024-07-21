@@ -1,16 +1,15 @@
 {
   "name": "ex-banking",
-  "version": "0.0.0",
-  "description": "ExBanking",
-  "main": "app.js",
+  "version": "1.0.0",
+  "description": "ExBanking Pipeline Project",
+  "main": "src/mockApi.js",
   "scripts": {
     "start": "node src/mockApi.js",
-    "test": "jest",
-    "load-test": "artillery run load-test.yml"
+    "test": "jest --reporters=default --reporters=jest-html-reporters"
   },
   "jest": {
     "testEnvironment": "node",
-    "roots": [ "<rootDir>/test" ],
+    "roots": ["<rootDir>/test"],
     "reporters": [
       "default",
       [

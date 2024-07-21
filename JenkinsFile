@@ -19,14 +19,14 @@ pipeline {
                 bat 'npm install'
             }
         }
-
-	stage('Stop MongoDB') {
+        
+        stage('Stop MongoDB') {
             steps {
                 // Stop MongoDB
                 bat 'net stop MongoDB'
             }
         }
-        
+
         stage('Start MongoDB') {
             steps {
                 // Start MongoDB
@@ -41,7 +41,13 @@ pipeline {
             }
             post {
                 always {
-                    junit 'reports/junit.xml' // Publish test results
+                    archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+                    publishHTML(target: [
+                        reportName: 'Test Report',
+                        reportDir: 'reports',
+                        reportFiles: 'report.html',
+                        keepAll: true
+                    ])
                 }
             }
         }
@@ -51,18 +57,6 @@ pipeline {
                 // Run load tests
                 bat 'artillery run load-test.yml'
             }
-        }
-    }
-
-    post {
-        always {
-            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
-            publishHTML(target: [
-                reportName: 'Test Report',
-                reportDir: 'reports',
-                reportFiles: 'report.html',
-                keepAll: true
-            ])
         }
     }
 }

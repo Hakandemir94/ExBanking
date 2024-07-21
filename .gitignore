@@ -11,9 +11,6 @@
 # User-specific files (Mono Auto Generated)
 mono_crash.*
 
-# Mono auto generated files
-mono_crash.*
-
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -30,7 +27,21 @@ bld/
 # VS Code directories
 .vscode/
 .vs/
-
-# Others
 *.vsidx
-.vs/
+
+# Node.js directories
+node_modules/
+
+# Test coverage
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build artifacts
+build/
+dist/
+
+# Environment variables
+.env
