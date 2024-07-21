@@ -19,6 +19,13 @@ pipeline {
                 bat 'npm install'
             }
         }
+
+	stage('Stop MongoDB') {
+            steps {
+                // Stop MongoDB
+                bat 'net stop MongoDB'
+            }
+        }
         
         stage('Start MongoDB') {
             steps {
