@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\mockApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:src\\mockApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\backend\\bankingservice.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:test\\backend\\bankingservice.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\repositories\\BankingServiceRepository.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:test\\repositories\\BankingServiceRepository.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\mockApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|solutionrelative:src\\mockApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03EC5C59-FE95-47B7-90A2-67CF77D170DA}|ExBanking.njsproj|C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\utils\\utils.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -54,11 +54,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BankingServiceRepository.js",
               "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\repositories\\BankingServiceRepository.js",
               "RelativeDocumentMoniker": "test\\repositories\\BankingServiceRepository.js",
@@ -70,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "userController.js",
               "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\controllers\\userController.js",
               "RelativeDocumentMoniker": "src\\controllers\\userController.js",
@@ -82,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "userService.js",
               "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\services\\userService.js",
               "RelativeDocumentMoniker": "src\\services\\userService.js",
@@ -94,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "user.js",
               "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\models\\user.js",
               "RelativeDocumentMoniker": "src\\models\\user.js",
@@ -130,16 +134,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "bankingservice.test.js",
               "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\backend\\bankingservice.test.js",
               "RelativeDocumentMoniker": "test\\backend\\bankingservice.test.js",
               "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\test\\backend\\bankingservice.test.js",
               "RelativeToolTip": "test\\backend\\bankingservice.test.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-31T12:41:45.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T12:41:45.242Z"
             },
             {
               "$type": "Document",
@@ -167,15 +170,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "mockApi.js",
               "DocumentMoniker": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\mockApi.js",
               "RelativeDocumentMoniker": "src\\mockApi.js",
               "ToolTip": "C:\\Users\\demir\\Desktop\\SWDev\\ExBanking\\src\\mockApi.js",
               "RelativeToolTip": "src\\mockApi.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-29T12:33:01.022Z"
+              "WhenOpened": "2024-05-29T12:33:01.022Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
