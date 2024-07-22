@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'ExBanking_NodeJS' // The NodeJS version configured in Jenkins
+        nodejs 'ExBanking_NodeJS' // The NodeJS version you configured in Jenkins
     }
 
     stages {
@@ -23,7 +23,7 @@ pipeline {
         stage('Stop MongoDB') {
             steps {
                 // Stop MongoDB if it's running
-                bat 'net stop MongoDB'
+                bat 'net stop MongoDB || exit 0'
             }
         }
 
@@ -72,6 +72,10 @@ pipeline {
                 reportFiles: 'report.html',
                 keepAll: true
             ])
+            // Stop the mock API server
+            bat 'taskkill /F /IM node.exe /T || exit 0'
+            // Stop MongoDB
+            bat 'net stop MongoDB || exit 0'
         }
     }
 }
