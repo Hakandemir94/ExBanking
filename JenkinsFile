@@ -31,6 +31,8 @@ pipeline {
             steps {
                 // Start MongoDB
                 bat 'net start MongoDB'
+                // Give the DB some time to start
+                sleep time: 10, unit: 'SECONDS' // Increased wait time
             }
         }
         
@@ -39,7 +41,7 @@ pipeline {
                 // Start the mock API server
                 bat 'start /B node src/mockApi.js'
                 // Give the server some time to start
-                sleep time: 5, unit: 'SECONDS'
+                sleep time: 10, unit: 'SECONDS' // Increased wait time
             }
         }
 
@@ -50,6 +52,10 @@ pipeline {
             }
             post {
                 always {
+                    // Debug: List contents of the reports directory
+                    bat 'dir reports'
+                    // Ensure the correct path for JUnit results
+                    bat 'IF EXIST reports\\junit.xml (echo JUnit report found) ELSE (echo JUnit report not found)'
                     junit 'reports/junit.xml' // Publish test results
                 }
             }
