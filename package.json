@@ -15,7 +15,7 @@
       [
         "jest-html-reporters",
         {
-          "publicPath": "./reports",
+          "publicPath": ".",
           "filename": "report.html",
           "expand": true,
           "inlineSource": true
