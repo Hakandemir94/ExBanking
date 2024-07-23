@@ -5,7 +5,7 @@
   "main": "src/mockApi.js",
   "scripts": {
     "start": "node src/mockApi.js",
-    "test": "jest --reporters=jest-html-reporters
+    "test": "jest"
   },
   "jest": {
     "testEnvironment": "node",
