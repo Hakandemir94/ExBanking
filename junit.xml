@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="0.866">
+  <testsuite name="BankingService" errors="0" failures="0" skipped="0" timestamp="2024-07-23T09:38:00" time="0.807" tests="9">
+    <testcase classname="BankingService create_user Endpoint TC001: Valid User Creation" name="BankingService create_user Endpoint TC001: Valid User Creation" time="0.077">
+    </testcase>
+    <testcase classname="BankingService create_user Endpoint TC002: Duplicate User Creation" name="BankingService create_user Endpoint TC002: Duplicate User Creation" time="0.015">
+    </testcase>
+    <testcase classname="BankingService create_user Endpoint TC003: Empty Username" name="BankingService create_user Endpoint TC003: Empty Username" time="0.006">
+    </testcase>
+    <testcase classname="BankingService create_user Endpoint TC004: Username with Special Characters" name="BankingService create_user Endpoint TC004: Username with Special Characters" time="0.006">
+    </testcase>
+    <testcase classname="BankingService create_user Endpoint TC005: Long Username (Boundary Testing)" name="BankingService create_user Endpoint TC005: Long Username (Boundary Testing)" time="0.005">
+    </testcase>
+    <testcase classname="BankingService deposit Endpoint TC008: Valid Deposit" name="BankingService deposit Endpoint TC008: Valid Deposit" time="0.02">
+    </testcase>
+    <testcase classname="BankingService deposit Endpoint TC009: Invalid User for Deposit" name="BankingService deposit Endpoint TC009: Invalid User for Deposit" time="0.006">
+    </testcase>
+    <testcase classname="BankingService deposit Endpoint TC011: Zero Deposit Amount" name="BankingService deposit Endpoint TC011: Zero Deposit Amount" time="0.011">
+    </testcase>
+    <testcase classname="BankingService deposit Endpoint TC012: Large Deposit Amount (Boundary Testing)" name="BankingService deposit Endpoint TC012: Large Deposit Amount (Boundary Testing)" time="0.01">
+    </testcase>
+  </testsuite>
+</testsuites>
