@@ -24,7 +24,7 @@
       [
         "jest-junit",
         {
-          "outputDirectory": "reports",
+          "outputDirectory": ".",
    	  "reportTestSuiteErrors": "true",
           "outputName": "junit.xml"
         }
