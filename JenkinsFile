@@ -8,62 +8,52 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the code from GitHub
                 git url: 'https://github.com/Hakandemir94/ExBanking.git', branch: 'master'
             }
         }
         
         stage('Install Dependencies') {
             steps {
-                // Install dependencies
                 bat 'npm install'
             }
         }
         
         stage('Stop MongoDB') {
             steps {
-                // Stop MongoDB if it's running
                 bat 'net stop MongoDB || exit 0'
             }
         }
 
         stage('Start MongoDB') {
             steps {
-                // Start MongoDB
                 bat 'net start MongoDB'
-                // Give the DB some time to start
-                sleep time: 10, unit: 'SECONDS' // Increased wait time
+                sleep time: 10, unit: 'SECONDS'
             }
         }
         
         stage('Start Mock API') {
             steps {
-                // Start the mock API server
                 bat 'start /B node src/mockApi.js'
-                // Give the server some time to start
-                sleep time: 10, unit: 'SECONDS' // Increased wait time
+                sleep time: 10, unit: 'SECONDS'
             }
         }
 
         stage('Run Tests') {
             steps {
-                // Run tests
                 bat 'npm test'
             }
             post {
                 always {
-                    // Debug: List contents of the reports directory
                     bat 'dir reports'
-                    // Ensure the correct path for JUnit results
                     bat 'IF EXIST reports\\junit.xml (echo JUnit report found) ELSE (echo JUnit report not found)'
-                    junit './junit.xml' // Publish test results
+                    junit 'reports/junit.xml'
+                    archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
                 }
             }
         }
 
         stage('Run Load Tests') {
             steps {
-                // Run load tests
                 bat 'artillery run load-test.yml'
             }
         }
@@ -71,16 +61,13 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
             publishHTML(target: [
                 reportName: 'Test Report',
                 reportDir: 'reports',
                 reportFiles: 'report.html',
                 keepAll: true
             ])
-            // Stop the mock API server
             bat 'taskkill /F /IM node.exe /T || exit 0'
-            // Stop MongoDB
             bat 'net stop MongoDB || exit 0'
         }
     }
