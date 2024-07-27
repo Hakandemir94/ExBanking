@@ -5,7 +5,8 @@
   "main": "src/mockApi.js",
   "scripts": {
     "start": "node src/mockApi.js",
-    "test": "jest --ci --coverage"
+    "test": "jest --ci --coverage",
+    "testResultsProcessor": "jest-junit"
   },
   "jest": {
     "testEnvironment": "node",
