@@ -5,6 +5,10 @@ pipeline {
         nodejs 'ExBanking_NodeJS' // The NodeJS version you configured in Jenkins
     }
 
+    environment {
+        BUILD_URL = "http://localhost:8080/job/${env.JOB_NAME}/${env.BUILD_NUMBER}/artifact/reports/"
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -27,26 +31,34 @@ pipeline {
         stage('Start MongoDB') {
             steps {
                 bat 'net start MongoDB'
-                sleep time: 10, unit: 'SECONDS'
+                sleep time: 10, unit: 'SECONDS' // Increased wait time
             }
         }
         
         stage('Start Mock API') {
             steps {
                 bat 'start /B node src/mockApi.js'
-                sleep time: 10, unit: 'SECONDS'
+                sleep time: 10, unit: 'SECONDS' // Increased wait time
             }
         }
 
         stage('Run Tests') {
             steps {
+                script {
+                    // Update package.json with the correct urlForTestFiles
+                    def packageJson = readFile('package.json')
+                    def newPackageJson = packageJson.replaceAll('"urlForTestFiles": ".*"', "\"urlForTestFiles\": \"${BUILD_URL}\"")
+                    writeFile(file: 'package.json', text: newPackageJson)
+                }
                 bat 'npm test'
             }
             post {
                 always {
+                    // Debug: List contents of the reports directory
                     bat 'dir reports'
+                    // Ensure the correct path for JUnit results
                     bat 'IF EXIST reports\\junit.xml (echo JUnit report found) ELSE (echo JUnit report not found)'
-                    junit 'reports/junit.xml'
+                    junit 'reports/junit.xml' // Publish test results
                     archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
                 }
             }
@@ -67,7 +79,9 @@ pipeline {
                 reportFiles: 'report.html',
                 keepAll: true
             ])
+            // Stop the mock API server
             bat 'taskkill /F /IM node.exe /T || exit 0'
+            // Stop MongoDB
             bat 'net stop MongoDB || exit 0'
         }
     }
