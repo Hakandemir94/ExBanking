@@ -58,7 +58,7 @@ pipeline {
                     bat 'dir reports'
                     // Ensure the correct path for JUnit results
                     bat 'IF EXIST reports\\junit.xml (echo JUnit report found) ELSE (echo JUnit report not found)'
-                    junit 'reports/junit.xml', testResults: 'junit.xml' // Publish test results
+                    junit 'reports/junit.xml' // Publish test results
                     archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
                 }
             }
