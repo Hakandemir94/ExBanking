@@ -31,14 +31,14 @@ pipeline {
         stage('Start MongoDB') {
             steps {
                 bat 'net start MongoDB'
-                sleep time: 10, unit: 'SECONDS' // Increased wait time
+                sleep time: 5, unit: 'SECONDS' // Increased wait time
             }
         }
         
         stage('Start Mock API') {
             steps {
                 bat 'start /B node src/mockApi.js'
-                sleep time: 10, unit: 'SECONDS' // Increased wait time
+                sleep time: 5, unit: 'SECONDS' // Increased wait time
             }
         }
 

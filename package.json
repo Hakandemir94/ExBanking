@@ -19,7 +19,7 @@
           "filename": "report.html",
           "expand": true,
           "inlineSource": true,
-          "urlForTestFiles": "PLACEHOLDER_URL"
+          "urlForTestFiles": "http://localhost:8080/job/ExBankingPipeline/${BUILD_NUMBER}/artifact/reports/"
         }
       ],
       [
