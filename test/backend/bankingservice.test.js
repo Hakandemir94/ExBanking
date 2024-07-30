@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const BankingService = require('../../src/bankingService');
-const { startDatabase, clearDatabase, stopDatabase, printUsers } = require('../utils/utils');
+const { startDatabase, clearDatabase, stopDatabase } = require('../utils/utils');
 const BankingServiceRepository = require('../repositories/BankingServiceRepository');
 
 const usersLogPath = path.join(__dirname, 'createdUsers.log');
@@ -30,11 +30,11 @@ describe('BankingService', () => {
         fs.appendFileSync(usersLogPath, userDetails, { flag: 'a' });
     };
 
-
     describe('create_user Endpoint', () => {
         test('TC001: Valid User Creation', async () => {
+            const username = 'validUser';
             try {
-                const response = await bankingServiceRepo.createUser('validUser');
+                const response = await bankingServiceRepo.createUser(username);
                 expect(response.success).toBe(true);
                 expect(response.message).toBe('User created');
                 logUserDetails(username, response);
@@ -45,9 +45,10 @@ describe('BankingService', () => {
         });
 
         test('TC002: Duplicate User Creation', async () => {
+            const username = 'duplicateUser';
             try {
-                await bankingServiceRepo.createUser('duplicateUser');
-                const response = await bankingServiceRepo.createUser('duplicateUser');
+                await bankingServiceRepo.createUser(username);
+                const response = await bankingServiceRepo.createUser(username);
                 expect(response.success).toBe(false);
                 expect(response.message).toBe('User already exists');
                 logUserDetails(username, response);
@@ -58,8 +59,9 @@ describe('BankingService', () => {
         });
 
         test('TC003: Empty Username', async () => {
+            const username = '';
             try {
-                const response = await bankingServiceRepo.createUser('');
+                const response = await bankingServiceRepo.createUser(username);
                 expect(response.success).toBe(false);
                 expect(response.message).toBe('Username cannot be empty');
                 logUserDetails(username, response);
@@ -70,8 +72,9 @@ describe('BankingService', () => {
         });
 
         test('TC004: Username with Special Characters', async () => {
+            const username = '@user';
             try {
-                const response = await bankingServiceRepo.createUser('@user');
+                const response = await bankingServiceRepo.createUser(username);
                 expect(response.success).toBe(false);
                 expect(response.message).toBe('Invalid username');
                 logUserDetails(username, response);
@@ -82,9 +85,9 @@ describe('BankingService', () => {
         });
 
         test('TC005: Long Username (Boundary Testing)', async () => {
+            const username = 'a'.repeat(256);
             try {
-                const longUsername = 'a'.repeat(256);
-                const response = await bankingServiceRepo.createUser(longUsername);
+                const response = await bankingServiceRepo.createUser(username);
                 expect(response.success).toBe(false);
                 expect(response.message).toBe('Username exceeds maximum length');
                 logUserDetails(username, response);
@@ -97,13 +100,14 @@ describe('BankingService', () => {
 
     describe('deposit Endpoint', () => {
         test('TC008: Valid Deposit', async () => {
+            const username = 'depositUser';
             try {
-                const response = await bankingServiceRepo.createUser('depositUser');
-                const { userId } = response;
+                const userResponse = await bankingServiceRepo.createUser(username);
+                const { userId } = userResponse;
                 const depositResponse = await bankingServiceRepo.deposit(userId, 100);
                 expect(depositResponse.success).toBe(true);
                 expect(depositResponse.balance).toBe(100);
-                logUserDetails(username, response);
+                logUserDetails(username, userResponse);
             } catch (error) {
                 console.error('Error in TC008:', error);
                 throw error;
@@ -111,8 +115,9 @@ describe('BankingService', () => {
         });
 
         test('TC009: Invalid User for Deposit', async () => {
+            const username = 'invalidUserId';
             try {
-                const response = await bankingServiceRepo.deposit('invalidUserId', 100);
+                const response = await bankingServiceRepo.deposit(username, 100);
                 expect(response.success).toBe(false);
                 expect(response.message).toBe('User does not exist');
                 logUserDetails(username, response);
@@ -123,13 +128,14 @@ describe('BankingService', () => {
         });
 
         test('TC011: Zero Deposit Amount', async () => {
+            const username = 'zeroDepositUser';
             try {
-                const response = await bankingServiceRepo.createUser('zeroDepositUser');
-                const { userId } = response;
+                const userResponse = await bankingServiceRepo.createUser(username);
+                const { userId } = userResponse;
                 const depositResponse = await bankingServiceRepo.deposit(userId, 0);
                 expect(depositResponse.success).toBe(false);
                 expect(depositResponse.message).toBe('Deposit amount must be greater than zero');
-                logUserDetails(username, response);
+                logUserDetails(username, userResponse);
             } catch (error) {
                 console.error('Error in TC011:', error);
                 throw error;
@@ -137,14 +143,15 @@ describe('BankingService', () => {
         });
 
         test('TC012: Large Deposit Amount (Boundary Testing)', async () => {
+            const username = 'largeDepositUser';
             try {
-                const response = await bankingServiceRepo.createUser('largeDepositUser');
-                const { userId } = response;
+                const userResponse = await bankingServiceRepo.createUser(username);
+                const { userId } = userResponse;
                 const largeAmount = 1e10;
                 const depositResponse = await bankingServiceRepo.deposit(userId, largeAmount);
                 expect(depositResponse.success).toBe(false);
                 expect(depositResponse.message).toBe('Deposit amount exceeds maximum limit');
-                logUserDetails(username, response);
+                logUserDetails(username, userResponse);
             } catch (error) {
                 console.error('Error in TC012:', error);
                 throw error;
