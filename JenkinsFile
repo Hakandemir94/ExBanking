@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'ExBanking_NodeJS' // The NodeJS version you configured in Jenkins
+        nodejs 'ExBanking_NodeJS' // The NodeJS version configured in Jenkins
     }
 
     environment {
@@ -31,21 +31,20 @@ pipeline {
         stage('Start MongoDB') {
             steps {
                 bat 'net start MongoDB'
-                sleep time: 5, unit: 'SECONDS' // Increased wait time
+                sleep time: 5, unit: 'SECONDS' 
             }
         }
         
         stage('Start Mock API') {
             steps {
                 bat 'start /B node src/mockApi.js'
-                sleep time: 5, unit: 'SECONDS' // Increased wait time
+                sleep time: 5, unit: 'SECONDS' 
             }
         }
 
         stage('Run Tests') {
             steps {
                 script {
-                    // Update package.json with the correct urlForTestFiles
                     def packageJson = readFile('package.json')
                     def newPackageJson = packageJson.replaceAll('"urlForTestFiles": ".*"', "\"urlForTestFiles\": \"${BUILD_URL}\"")
                     writeFile(file: 'package.json', text: newPackageJson)
@@ -54,12 +53,11 @@ pipeline {
             }
             post {
                 always {
-                    // Debug: List contents of the reports directory
                     bat 'dir reports'
-                    // Ensure the correct path for JUnit results
                     bat 'IF EXIST reports\\junit.xml (echo JUnit report found) ELSE (echo JUnit report not found)'
                     junit 'reports/junit.xml' // Publish test results
                     archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+		    archiveArtifacts artifacts: 'test/backend/createdUsers.log', allowEmptyArchive: true
                 }
             }
         }

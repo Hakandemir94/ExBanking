@@ -1,4 +1,4 @@
-// src/mockApi.js
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/exbanking', { useNewUrlParser: true,
 const app = express();
 const port = 3000;
 
-// Middleware to parse raw body as a buffer
+//To parse raw body as a buffer
 app.use(bodyParser.raw({ type: 'application/octet-stream' }));
 
 // Routes
