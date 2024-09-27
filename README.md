@@ -43,6 +43,7 @@ Make sure MongoDB is running. You can use MongoDB Compass to manage the database
 
 - Start the mock API server:
 npm start
+
 The server will be running at http://localhost:3000.
 
 ## Running Tests
