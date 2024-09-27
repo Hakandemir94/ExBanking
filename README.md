@@ -36,7 +36,6 @@ net start MongoDB
 ## Installation
 - Open terminal in project direrctory
 
-cd ExBanking
 - Install the dependencies:
 npm install
 
