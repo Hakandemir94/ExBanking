@@ -51,7 +51,7 @@ The server will be running at http://localhost:3000.
 npm test
 
 - Run the load tests using Artillery:
-artillery run load-test/test-script.yml
+artillery run load-test.yml
 
 Load testing is performed using Artillery. The configuration is defined in the load-test.yml file. The test simulates multiple users creating accounts over a period of time.
 
