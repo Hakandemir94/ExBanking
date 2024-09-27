@@ -56,38 +56,36 @@ artillery run load-test.yml
 Load testing is performed using Artillery. The configuration is defined in the load-test.yml file. The test simulates multiple users creating accounts over a period of time.
 
 ## API Endpoints
-- POST /create_user
-Creates a new user with a unique username.
+- POST /create_user: Creates a new user with a unique username.
 
 Request: Protobuf-encoded CreateUserRequest
 
 Response: Protobuf-encoded CreateUserResponse
 
 
-- POST /deposit
-  
-Deposits an amount to the specified user's account.
+- POST /deposit: Deposits an amount to the specified user's account.
 
 Request: Protobuf-encoded TransactionRequest
+
 Response: Protobuf-encoded TransactionResponse
 
 
-- POST /withdraw
-Withdraws an amount from the specified user's account.
+- POST /withdraw: Withdraws an amount from the specified user's account.
 
 Request: Protobuf-encoded TransactionRequest
+
 Response: Protobuf-encoded TransactionResponse
 
 
-- POST /get_balance
-Retrieves the balance for the specified user.
+- POST /get_balance: Retrieves the balance for the specified user.
 
 Request: Protobuf-encoded BalanceRequest
+
 Response: Protobuf-encoded BalanceResponse
 
 
-- POST /send
-Transfers an amount from one user to another.
+- POST /send: Transfers an amount from one user to another.
 
 Request: Protobuf-encoded SendRequest
+
 Response: Protobuf-encoded SendResponse
