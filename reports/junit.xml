@@ -1,167 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="9" failures="9" errors="0" time="1.751">
-  <testsuite name="BankingService" errors="0" failures="9" skipped="0" timestamp="2024-07-30T13:29:26" time="1.646" tests="9">
-    <testcase classname="BankingService create_user Endpoint TC001: Valid User Creation" name="BankingService create_user Endpoint TC001: Valid User Creation" time="0.102">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:26:34)</failure>
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="1.223">
+  <testsuite name="BankingService" errors="0" failures="0" skipped="0" timestamp="2024-09-27T10:04:21" time="1.134" tests="9">
+    <testcase classname="BankingService create_user Endpoint TC001: Valid User Creation" name="BankingService create_user Endpoint TC001: Valid User Creation" time="0.06">
     </testcase>
-    <testcase classname="BankingService create_user Endpoint TC002: Duplicate User Creation" name="BankingService create_user Endpoint TC002: Duplicate User Creation" time="0.016">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:37:17)</failure>
+    <testcase classname="BankingService create_user Endpoint TC002: Duplicate User Creation" name="BankingService create_user Endpoint TC002: Duplicate User Creation" time="0.018">
     </testcase>
-    <testcase classname="BankingService create_user Endpoint TC003: Empty Username" name="BankingService create_user Endpoint TC003: Empty Username" time="0.014">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:49:34)</failure>
+    <testcase classname="BankingService create_user Endpoint TC003: Empty Username" name="BankingService create_user Endpoint TC003: Empty Username" time="0.007">
     </testcase>
-    <testcase classname="BankingService create_user Endpoint TC004: Username with Special Characters" name="BankingService create_user Endpoint TC004: Username with Special Characters" time="0.013">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:60:34)</failure>
+    <testcase classname="BankingService create_user Endpoint TC004: Username with Special Characters" name="BankingService create_user Endpoint TC004: Username with Special Characters" time="0.007">
     </testcase>
-    <testcase classname="BankingService create_user Endpoint TC005: Long Username (Boundary Testing)" name="BankingService create_user Endpoint TC005: Long Username (Boundary Testing)" time="0.017">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:72:34)</failure>
+    <testcase classname="BankingService create_user Endpoint TC005: Long Username (Boundary Testing)" name="BankingService create_user Endpoint TC005: Long Username (Boundary Testing)" time="0.007">
     </testcase>
-    <testcase classname="BankingService deposit Endpoint TC008: Valid Deposit" name="BankingService deposit Endpoint TC008: Valid Deposit" time="0.012">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:85:38)</failure>
+    <testcase classname="BankingService deposit Endpoint TC008: Valid Deposit" name="BankingService deposit Endpoint TC008: Valid Deposit" time="0.024">
     </testcase>
-    <testcase classname="BankingService deposit Endpoint TC009: Invalid User for Deposit" name="BankingService deposit Endpoint TC009: Invalid User for Deposit" time="0.011">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.deposit (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:31:26)
-    at BankingServiceRepository.deposit (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:11:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:98:34)</failure>
+    <testcase classname="BankingService deposit Endpoint TC009: Invalid User for Deposit" name="BankingService deposit Endpoint TC009: Invalid User for Deposit" time="0.007">
     </testcase>
-    <testcase classname="BankingService deposit Endpoint TC011: Zero Deposit Amount" name="BankingService deposit Endpoint TC011: Zero Deposit Amount" time="0.01">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:109:38)</failure>
+    <testcase classname="BankingService deposit Endpoint TC011: Zero Deposit Amount" name="BankingService deposit Endpoint TC011: Zero Deposit Amount" time="0.013">
     </testcase>
-    <testcase classname="BankingService deposit Endpoint TC012: Large Deposit Amount (Boundary Testing)" name="BankingService deposit Endpoint TC012: Large Deposit Amount (Boundary Testing)" time="0.011">
-      <failure>AggregateError: 
-    at Function.Object.&lt;anonymous&gt;.AxiosError.from (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\AxiosError.js:89:14)
-    at RedirectableRequest.handleRequestError (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\adapters\http.js:610:25)
-    at RedirectableRequest.emit (node:events:518:28)
-    at ClientRequest.eventHandlers.&lt;computed&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\follow-redirects\index.js:38:24)
-    at ClientRequest.emit (node:events:518:28)
-    at Socket.socketErrorListener (node:_http_client:500:9)
-    at Socket.emit (node:events:518:28)
-    at emitErrorNT (node:internal/streams/destroy:169:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)
-    at Axios.request (C:\Users\demir\Desktop\SWDev\ExBanking\node_modules\axios\lib\core\Axios.js:45:41)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at BankingService.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\src\bankingService.js:25:26)
-    at BankingServiceRepository.createUser (C:\Users\demir\Desktop\SWDev\ExBanking\test\repositories\BankingServiceRepository.js:7:16)
-    at Object.&lt;anonymous&gt; (C:\Users\demir\Desktop\SWDev\ExBanking\test\backend\bankingservice.test.js:122:38)</failure>
+    <testcase classname="BankingService deposit Endpoint TC012: Large Deposit Amount (Boundary Testing)" name="BankingService deposit Endpoint TC012: Large Deposit Amount (Boundary Testing)" time="0.014">
     </testcase>
   </testsuite>
 </testsuites>
