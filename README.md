@@ -2,16 +2,8 @@
 
 ExBanking API is a simple banking service that allows users to create accounts, deposit funds, withdraw funds, check their balance, and send money to other users. This service is implemented using Node.js, Express, MongoDB, and Protocol Buffers for structured data communication. The goal is to simulate essential banking operations such as creating users, depositing funds, withdrawing funds, transferring funds, and checking account balances. The client interacts with the API via Protocol Buffers, ensuring efficient and scalable communication between the client and the server.
 
-## Problem Statement
-
-Traditional banking systems often face challenges when handling real-time transactions across multiple services. This project aims to address the following challenges:
-
-1. **Handling Financial Transactions**: Simulating a banking service that can handle deposits, withdrawals, and transfers securely and efficiently.
-2. **Data Consistency**: Ensuring the balances are always accurate across multiple user accounts after each transaction.
-3. **Communication Efficiency**: Utilizing Protocol Buffers to reduce the size of the messages exchanged between the client and the server, improving speed and scalability.
-4. **User Data Persistence**: Using MongoDB for persistent user data storage and retrieval, allowing the mock service to simulate real-world banking scenarios.
-
-By providing a simple interface for interacting with the banking service API, this project demonstrates how financial transactions can be handled in a scalable and efficient way.
+This project is done according to TestPlan.pdf
+The automated test framework partly covers the mock test plan for demonstration.
 
 ## Features
 
@@ -43,7 +35,7 @@ Ensure MongoDB is installed and running locally on your machine. You can start M
 net start MongoDB
 
 ## Installation
-- Clone the repository
+- Open terminal in project direrctory
 
 cd ExBanking
 - Install the dependencies:
@@ -60,7 +52,7 @@ The server will be running at http://localhost:3000.
 npm test
 
 - Run the load tests using Artillery:
-npm run load-test
+artillery run load-test/test-script.yml
 
 Load testing is performed using Artillery. The configuration is defined in the load-test.yml file. The test simulates multiple users creating accounts over a period of time.
 
