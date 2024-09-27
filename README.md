@@ -64,6 +64,7 @@ Response: Protobuf-encoded CreateUserResponse
 
 
 - POST /deposit
+  
 Deposits an amount to the specified user's account.
 
 Request: Protobuf-encoded TransactionRequest
