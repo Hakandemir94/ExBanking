@@ -2,8 +2,7 @@
 
 ExBanking API is a simple banking service that allows users to create accounts, deposit funds, withdraw funds, check their balance, and send money to other users. This service is implemented using Node.js, Express, MongoDB, and Protocol Buffers for structured data communication. The goal is to simulate essential banking operations such as creating users, depositing funds, withdrawing funds, transferring funds, and checking account balances. The client interacts with the API via Protocol Buffers, ensuring efficient and scalable communication between the client and the server.
 
-This project is done according to TestPlan.pdf
-The automated test framework partly covers the mock test plan for demonstration.
+This project is done according to TestPlan.pdf. The automated test framework partly covers the mock test plan for demonstration.
 
 ## Features
 
