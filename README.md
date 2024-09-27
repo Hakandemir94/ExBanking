@@ -60,6 +60,7 @@ Load testing is performed using Artillery. The configuration is defined in the l
 Creates a new user with a unique username.
 
 Request: Protobuf-encoded CreateUserRequest
+
 Response: Protobuf-encoded CreateUserResponse
 
 
