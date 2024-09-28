@@ -4,7 +4,7 @@ ExBanking API is a simple banking service that allows users to create accounts, 
 
 This project is done according to TestPlan.pdf. The automated test framework partly covers the mock test plan for demonstration.
 
-You can already see test results here ExBanking/reports/report.html
+You can already see test results here ***ExBanking/reports/report.html***
 
 ## Features
 
@@ -39,21 +39,21 @@ net start MongoDB
 - Open terminal in project direrctory
 
 - Command to install the dependencies:
-"npm install"
+**npm install**
 
 Make sure MongoDB is running. You can use MongoDB Compass to manage the database if needed.
 
 - Comman to start the mock API server:
-"npm start"
+**npm start**
 
 The server will be running at http://localhost:3000.
 
 ## Running Tests
 - Command to run the Jest test suite:
-"npm test"
+**npm test**
 
 - Command to run the load tests using Artillery:
-"artillery run load-test.yml"
+**artillery run load-test.yml**
 
 Load testing is performed using Artillery. The configuration is defined in the load-test.yml file. The test simulates multiple users creating accounts over a period of time.
 
