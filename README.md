@@ -4,6 +4,8 @@ ExBanking API is a simple banking service that allows users to create accounts, 
 
 This project is done according to TestPlan.pdf. The automated test framework partly covers the mock test plan for demonstration.
 
+ou can already see test results here ExBanking/reports/report.html
+
 ## Features
 
 - **Create User**: Create a new user with an initial balance of 0.
