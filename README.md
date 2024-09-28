@@ -36,22 +36,22 @@ net start MongoDB
 ## Installation
 - Open terminal in project direrctory
 
-- Install the dependencies:
-npm install
+- Command to install the dependencies:
+"npm install"
 
 Make sure MongoDB is running. You can use MongoDB Compass to manage the database if needed.
 
-- Start the mock API server:
-npm start
+- Comman to start the mock API server:
+"npm start"
 
 The server will be running at http://localhost:3000.
 
 ## Running Tests
-- Run the Jest test suite:
-npm test
+- Command to run the Jest test suite:
+"npm test"
 
-- Run the load tests using Artillery:
-artillery run load-test.yml
+- Command to run the load tests using Artillery:
+"artillery run load-test.yml"
 
 Load testing is performed using Artillery. The configuration is defined in the load-test.yml file. The test simulates multiple users creating accounts over a period of time.
 
